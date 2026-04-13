@@ -6,8 +6,6 @@ import "./App.css";
 import Search from "./Search";
 import Pokemon from "./Pokemon";
 
-// teste de gh pages
-
 const NavigationBar = () => {
   return (
     <nav>
