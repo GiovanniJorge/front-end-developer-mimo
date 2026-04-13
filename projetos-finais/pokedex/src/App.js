@@ -17,7 +17,7 @@ const NavigationBar = () => {
 };
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="/front-end-developer-mimo/projetos-finais/pokedex">
     <NavigationBar />
     <div className="content">
       <Routes>
