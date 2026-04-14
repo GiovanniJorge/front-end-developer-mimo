@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from "react";
-import PokemonCard from "./PokemonCard";
+import React, { useState, useEffect } from "react";
 import "./Search.css";
+import PokemonCard from "./PokemonCard";
 
 const Search = () => {
   const [pokemons, setPokemons] = useState([]);
@@ -11,7 +11,7 @@ const Search = () => {
     fetch("https://pokedex.mimo.dev/api/pokemon")
       .then((response) => response.json())
       .then((data) => setPokemons(data));
-  }
+  };
 
   useEffect(() => {
     fetchPokemons();
@@ -26,7 +26,7 @@ const Search = () => {
       );
       setFilteredPokemons(filtered);
     }
-  }, [input, pokemons])
+  }, [input, pokemons]);
 
   return (
     <>
@@ -36,12 +36,12 @@ const Search = () => {
         onChange={(e) => setInput(e.target.value)}
       />
       <ul>
-        {filteredPokemons.map((pokemon, index) => (
-          <PokemonCard key={index} pokemon={pokemon} />
-          ))}
+        {filteredPokemons.map((pokemon) => (
+          <PokemonCard key={pokemon.name} pokemon={pokemon} />
+        ))}
       </ul>
     </>
-  )
+  );
 };
 
 export default Search;

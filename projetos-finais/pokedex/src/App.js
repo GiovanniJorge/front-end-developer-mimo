@@ -1,8 +1,8 @@
 import React from "react";
-import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
-import Pokedex from "./Pokedex";
-import Home from "./Home";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
+import Home from "./Home";
+import Pokedex from "./Pokedex";
 import Search from "./Search";
 import Pokemon from "./Pokemon";
 
@@ -13,22 +13,20 @@ const NavigationBar = () => {
       <Link to="/pokedex">Pokédex</Link>
       <Link to="/search">Search</Link>
     </nav>
-  )
+  );
 };
 
 const App = () => (
-  <BrowserRouter basename="/front-end-developer-mimo/projetos-finais/pokedex">
+  <BrowserRouter>
     <NavigationBar />
     <div className="content">
       <Routes>
-          <Route path="/" element={<Home />}>Home</Route>
-          <Route path="/pokedex" element={<Pokedex />}
-          >Pokédex</Route>
-          <Route path="/search" element={<Search />}
-          >Search</Route>
-          <Route path="/pokemon" element={<Pokemon />}>Pokémon</Route>
-        </Routes>
-      </div>
+        <Route path="/" element={<Home />} />
+        <Route path="/pokedex" element={<Pokedex />} />
+        <Route path="/search" element={<Search />} />
+        <Route path="/pokemon" element={<Pokemon />} />
+      </Routes>
+    </div>
   </BrowserRouter>
 );
 

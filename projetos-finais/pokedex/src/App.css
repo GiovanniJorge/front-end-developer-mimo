@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 body {
+  margin: 0;
   font-family: "Press Start 2P", sans-serif;
   background-color: #F7E39C;
   text-align: center;
-  margin: 0px;
 }
 
 .content {
@@ -24,7 +24,7 @@ nav {
   padding: 10px;
   background-color: #D13325;
   position: sticky;
-  top: 0px;
+  top: 0;
   z-index: 1000;
 }
 
@@ -40,5 +40,5 @@ nav a:hover {
 }
 
 a {
-  color: black;
+ color: black;
 }
