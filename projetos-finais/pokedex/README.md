@@ -1,7 +1,9 @@
 # Pokedex
 
 ![Preview 1 do projeto](preview1.png)
+
 ![Preview 2 do projeto](preview2.png)
+
 ![Preview 3 do projeto](preview3.png)
 
 Descrição
