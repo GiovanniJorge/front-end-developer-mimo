@@ -8,8 +8,7 @@ Exercícios e projetos relacionados ao curso "Front-End Developer" da Mimo — c
 - Aplicações responsivas e com boas práticas de desenvolvimento web.
 
 ## Badges
-- Linguagens: JavaScript (79.8%), CSS (17.2%), HTML (3%)
-- Repositório: https://github.com/GiovanniJorge/front-end-developer-mimo
+- Licença: MIT (ver arquivo LICENSE)
 
 ## Sumário
 - [Visão geral](#visão-geral)
@@ -145,10 +144,8 @@ Contribuições são bem-vindas! Fluxo sugerido:
 - Linter (ESLint) e formatador (Prettier) para manter consistência de código.
 
 ## Licença
-Este repositório utiliza a licença MIT — consulte o arquivo `LICENSE` na raiz (se existir).
+Este repositório utiliza a licença MIT — consulte o arquivo `LICENSE` na raiz.
 
 ## Autor / Contato
-**Autor:** Giovanni Jorge  
-**Repositório:** https://github.com/GiovanniJorge/front-end-developer-mimo
-
-Dúvidas, sugestões ou problemas podem ser abertos como **issues** no repositório ou via perfil do GitHub.
+Autor: Giovanni Jorge  
+Repositório: https://github.com/GiovanniJorge/front-end-developer-mimo
