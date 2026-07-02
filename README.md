@@ -10,6 +10,7 @@ Exercícios e projetos relacionados ao curso "Front-End Developer" da Mimo — c
 
 ## Badges
 ![Licença](https://img.shields.io/github/license/GiovanniJorge/front-end-developer-mimo?style=flat-square)
+![Projetos](https://img.shields.io/badge/quantidade-1%20projetos-blue?style=flat-square)
 
 ## Sumário
 - [Visão geral](#visão-geral)
@@ -34,12 +35,11 @@ Top-level:
 │   ├── exercicio-2/
 │   └── ...
 └── projetos-finais/           # Projetos completos e integrados
-    ├── pokedex/               # Pokedex interativa com React (Consumo de PokéAPI)
-    │   ├── public/            # Assets estáticos
-    │   ├── src/               # Código-fonte (componentes, serviços, estilos)
-    │   ├── package.json       # Dependências específicas do projeto
-    │   └── README.md          # Documentação detalhada
-    └── ...                    # Outros projetos adicionados conforme o progresso
+    └── pokedex/               # Pokedex interativa com React (Consumo de PokéAPI)
+        ├── public/            # Assets estáticos
+        ├── src/               # Código-fonte (componentes, serviços, estilos)
+        ├── package.json       # Dependências específicas do projeto
+        └── README.md          # Documentação detalhada
 ```
 
 ### Como se encaixa:
