@@ -10,7 +10,7 @@ Exercícios e projetos relacionados ao curso "Front-End Developer" da Mimo — c
 
 ## Badges
 ![Licença](https://img.shields.io/github/license/GiovanniJorge/front-end-developer-mimo?style=flat-square)
-![Projetos](https://img.shields.io/badge/quantidade-1%20projetos-blue?style=flat-square)
+![Projetos](https://img.shields.io/badge/quantidade-1%20projeto-blue?style=flat-square)
 
 ## Sumário
 - [Visão geral](#visão-geral)
