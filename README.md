@@ -1,104 +1,190 @@
 # Front-End Developer - Mimo
 
-Exercícios e projetos relacionados ao curso "Front-End Developer" da Mimo — coleção organizada de aplicações práticas com foco em JavaScript, CSS e HTML. Ideal para desenvolvedores que desejam consolidar conhecimentos em desenvolvimento front-end moderno.
-
-## Conteúdo principal
-- Exercícios prototipados com foco em funcionalidades reais e interativas.
-- Projetos estruturados com HTML, CSS e JavaScript vanilla ou frameworks modernos (React).
-- Exemplos de integração com APIs externas (ex.: PokéAPI).
-- Aplicações responsivas e com boas práticas de desenvolvimento web.
-
-## Badges
-![Licença](https://img.shields.io/github/license/GiovanniJorge/front-end-developer-mimo?style=flat-square)
-![Projetos](https://img.shields.io/badge/quantidade-1%20projeto-blue?style=flat-square)
+<p align="center">
+    <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python"></a>
+    <a href="#"><img src="https://img.shields.io/badge/status-concluído-brightgreen" alt="Status"></a>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/Licença-MIT-blue?logo=github&logoColor=white" alt="Licença"></a>
+    <a href="https://github.com/GiovanniJorge/python-mimo"><img src="https://img.shields.io/badge/Projetos-7-4A90E2?logo=github&color=4A90E2&logoColor=white" alt="Projetos"></a>
+</p>
 
 ## Sumário
-- [Visão geral](#visão-geral)
-- [Estrutura do repositório](#estrutura-do-repositório)
-- [Destaques do repositório](#destaques-do-repositório)
-- [Como executar os projetos](#como-executar-os-projetos)
-- [Contribuindo](#contribuindo)
+
+- [Descrição do Projeto](#descrição-do-projeto)
+- [Visualização](#visualização)
+- [Arquitetura e Estrutura do Repositório](#arquitetura-e-estrutura-do-repositório)
+- [Como Executar Localmente](#como-executar-localmente)
+- [Uso e Exemplos](#uso-e-exemplos)
+- [Troubleshooting / FAQ](#troubleshooting--faq)
+- [Contribuição](#contribuição)
+- [Autor](#autor)
 - [Licença](#licença)
-- [Autor / Contato](#autor--contato)
 
-## Visão geral
-Este repositório organiza exercícios e projetos práticos em desenvolvimento front-end que exemplificam conceitos de web design responsivo, manipulação do DOM, consumo de APIs e desenvolvimento com frameworks modernos. Cada projeto é uma aplicação independente e funcional, pronta para ser explorada e estendida.
+## Visualização
 
-## Estrutura do repositório
-Top-level:
+![Preview 1 do projeto](projetos-finais/pokedex/preview1.png)
+
+![Preview 2 do projeto](projetos-finais/pokedex/preview2.png)
+
+![Preview 3 do projeto](projetos-finais/pokedex/preview3.png)
+
+## Descrição do Projeto
+
+Este repositório reúne exercícios e projetos práticos de desenvolvimento front-end, com foco em JavaScript, HTML, CSS e React. O objetivo é reunir experiências de aprendizagem em uma estrutura organizada, permitindo revisar conceitos de interface, interatividade, consumo de APIs e boas práticas de desenvolvimento web.
+
+A parte mais relevante do projeto atualmente é a Pokédex interativa, uma aplicação em React que consome dados externos de uma API pública para listar Pokémon, buscar por nome ou número e exibir detalhes de cada criatura. O repositório funciona como um portfólio educacional de projetos e estudos realizados ao longo do curso de Front-End Developer.
+
+## Arquitetura e Estrutura do Repositório
+
+A organização do repositório é simples e modular, com foco em separar projetos independentes por pasta.
+
 ```text
-├── .gitignore
+front-end-developer-mimo/
+├── LICENSE
 ├── README.md
-├── package.json               # Dependências e scripts compartilhados
-├── exercicios/                # Exercícios e pequenas aplicações didáticas
-│   ├── exercicio-1/
-│   ├── exercicio-2/
-│   └── ...
-└── projetos-finais/           # Projetos completos e integrados
-    └── pokedex/               # Pokedex interativa com React (Consumo de PokéAPI)
-        ├── public/            # Assets estáticos
-        ├── src/               # Código-fonte (componentes, serviços, estilos)
-        ├── package.json       # Dependências específicas do projeto
-        └── README.md          # Documentação detalhada
+├── projetos-finais/
+│   └── pokedex/
+│       ├── public/
+│       │   ├── index.html
+│       │   ├── manifest.json
+│       │   ├── robots.txt
+│       │   └── ...
+│       ├── src/
+│       │   ├── App.js
+│       │   ├── App.css
+│       │   ├── Home.js
+│       │   ├── Pokedex.js
+│       │   ├── Pokemon.js
+│       │   ├── PokemonCard.js
+│       │   ├── Search.js
+│       │   ├── index.js
+│       │   ├── index.css
+│       │   └── ...
+│       ├── package.json
+│       ├── README.md
+│       ├── .gitignore
+│       ├── preview1.png
+│       ├── preview2.png
+│       └── preview3.png
+└── ...
 ```
 
-### Como se encaixa:
-- O repositório abriga uma variedade de projetos e exercícios independentes criados ao longo do curso.
-- Cada pasta possui sua própria estrutura dedicada, onde projetos baseados em ecossistemas modernos (como a Pokedex em React) contêm seus próprios arquivos `package.json` locais para execução isolada.
+### Como o fluxo funciona
 
-## Destaques do repositório
+- A aplicação principal está em `projetos-finais/pokedex`.
+- O `App.js` define as rotas da interface com `react-router-dom`.
+- O componente `Pokedex.js` consulta a API pública da Pokédex e armazena os resultados em estado local.
+- O componente `Pokemon.js` busca detalhes específicos com base no nome do Pokémon informado na rota.
+- A interface exibe os dados em componentes reutilizáveis, como cards e páginas de navegação.
 
-### Pokédex
-* **Descrição:** Interface dinâmica e integrada para listagem e busca de criaturas consumindo os dados da PokéAPI externa em tempo real.
-* **Tecnologias:** React, JavaScript (ES6+), CSS3 Modules.
-
-## Como executar os projetos
+## Como Executar Localmente
 
 ### Pré-requisitos
-- **Node.js** (v14 ou superior recomendado)
-- **npm** ou **yarn** como gerenciador de pacotes
-- Um navegador moderno (Chrome, Firefox, Edge ou Safari)
 
-### Passos para execução
+- Node.js 18 ou superior
+- npm ou yarn
+- Navegador moderno
 
-1. **Clone o repositório:**
+### Instalação
+
+1. Clone o repositório:
+
 ```bash
-git clone [https://github.com/GiovanniJorge/front-end-developer-mimo.git](https://github.com/GiovanniJorge/front-end-developer-mimo.git)
+git clone https://github.com/GiovanniJorge/front-end-developer-mimo.git
 cd front-end-developer-mimo
 ```
 
-2. **Para projetos React (Exemplo: Pokédex):**
+2. Acesse a pasta do projeto principal:
+
 ```bash
 cd projetos-finais/pokedex
+```
+
+3. Instale as dependências:
+
+```bash
 npm install
+```
+
+4. Inicie a aplicação:
+
+```bash
 npm start
 ```
-A aplicação iniciará o servidor local em `http://localhost:3000`. Para gerar o build otimizado de produção, execute `npm run build`.
 
-3. **Para exercícios simples (HTML / CSS / Vanilla JS):**
-```bash
-cd exercicios/seu-exercicio
+5. Abra a aplicação no navegador em:
 
-# No Linux/macOS:
-open index.html
-# No Windows:
-start index.html
-
-# Ou inicie um servidor HTTP local simples com Python:
-python3 -m http.server 8000
+```text
+http://localhost:3000
 ```
 
-## Contribuindo
-Contribuições são bem-vistas! Se deseja adicionar um novo exercício ou corrigir bugs estruturais de acessibilidade, siga os passos abaixo:
+### Build para produção
 
-1. Faça um **Fork** do repositório.
-2. Crie uma branch com nome descritivo: `feature/novo-exercicio` ou `fix/bug-correcao`.
-3. Faça commits atômicos com mensagens claras utilizando a convenção do projeto (ex: `feat:`, `fix:`, `docs:`).
-4. Abra um **Pull Request** detalhando as alterações implementadas.
+```bash
+npm run build
+```
+
+## Uso e Exemplos
+
+Após iniciar a aplicação, você pode:
+
+- navegar pela lista de Pokémon;
+- buscar Pokémon por nome ou número;
+- acessar detalhes como altura, peso, tipos e habilidades;
+- explorar visualizações e cards de cada Pokémon;
+- utilizar a navegação por rotas internas para alternar entre páginas.
+
+Exemplos de busca:
+
+- `pikachu`
+- `25`
+- `bulbasaur`
+
+## Troubleshooting / FAQ
+
+### O projeto não inicia
+Verifique se o Node.js está instalado corretamente e se você executou os comandos dentro da pasta `projetos-finais/pokedex`.
+
+### Erro ao instalar dependências
+Tente reinstalar o ambiente local:
+
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
+
+No Windows PowerShell:
+
+```powershell
+Remove-Item -Recurse -Force node_modules, package-lock.json
+npm install
+```
+
+### A aplicação não carrega dados da API
+Confirme sua conexão com a internet e verifique se a API da Pokédex está acessível. A parte principal do projeto depende de uma API externa para retornar as informações dos Pokémon.
+
+### O roteamento não funciona corretamente
+A aplicação usa `BrowserRouter`, então a execução precisa ocorrer via o servidor local do React (`npm start`), e não apenas abrindo arquivos estáticos no navegador.
+
+## Contribuição
+
+Contribuições são bem-vindas. Se você quiser colaborar:
+
+1. Faça um fork do repositório.
+2. Crie uma branch para a sua alteração:
+
+```bash
+git checkout -b feature/minha-contribuicao
+```
+
+3. Faça commits claros e objetivos.
+4. Abra um Pull Request com uma descrição das mudanças.
+
+## Autor
+
+- Nome: Giovanni Jorge
+- GitHub: [@GiovanniJorge](https://github.com/GiovanniJorge)
 
 ## Licença
-Este repositório utiliza a licença MIT — consulte o arquivo [LICENSE](LICENSE) na raiz.
 
-## Autor / Contato
-- **Autor:** Giovanni Jorge  
-- **Repositório:** [https://github.com/GiovanniJorge/front-end-developer-mimo](https://github.com/GiovanniJorge/front-end-developer-mimo)
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
