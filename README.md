@@ -1,10 +1,10 @@
 # Front-End Developer - Mimo
 
 <p align="center">
-    <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python"></a>
+    <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19.2.5-61DAFB?logo=react&logoColor=20232A" alt="React"></a>
+    <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"><img src="https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?logo=javascript&logoColor=20232A" alt="JavaScript"></a>
     <a href="#"><img src="https://img.shields.io/badge/status-concluído-brightgreen" alt="Status"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/Licença-MIT-blue?logo=github&logoColor=white" alt="Licença"></a>
-    <a href="https://github.com/GiovanniJorge/python-mimo"><img src="https://img.shields.io/badge/Projetos-7-4A90E2?logo=github&color=4A90E2&logoColor=white" alt="Projetos"></a>
 </p>
 
 ## Sumário
